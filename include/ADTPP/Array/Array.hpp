@@ -14,6 +14,7 @@ namespace adt
     
     public:
       Array(int size, int el);
+      void print();
       ~Array();
   };
 }

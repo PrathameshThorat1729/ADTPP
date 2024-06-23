@@ -11,3 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include(Config.cmake)
 
 add_subdirectory(src/Array)
+
+enable_testing()
+
+add_subdirectory(tests/Array)
