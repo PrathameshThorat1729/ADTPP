@@ -38,8 +38,9 @@ namespace adt
   void Array::insert_front(ll element) { this->insert(element, 0); }
   void Array::insert_back(ll element) { this->insert(element, _length); }
 
-  void Array::remove(ull index)
+  ll Array::remove(ull index)
   {
+    ll element = _arr[index];
     ll* temp_arr = new ll[--_length];
     for(ull i = 0; i < index; ++i)
       temp_arr[i] = _arr[i];
@@ -47,7 +48,11 @@ namespace adt
       temp_arr[i] = _arr[i + 1];
     delete[] _arr;
     _arr = temp_arr;
+    return element;
   }
+
+  ll Array::remove_front() { return this->remove(0); }
+  ll Array::remove_back() { return this->remove(_length - 1); }
 
   std::optional<ull> Array::linear_search(ll element)
   {

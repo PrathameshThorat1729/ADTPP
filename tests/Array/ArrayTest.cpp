@@ -32,6 +32,8 @@ int main(int argc, char** args)
   {
     adt::Array arr{1, 2, 3, 4, 5, 7};
     arr.remove(3);
+    arr.remove_front();
+    arr.remove_back();
     arr.print();
   }
   

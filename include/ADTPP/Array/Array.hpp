@@ -5,12 +5,10 @@
 #include <optional>
 #include <initializer_list>
 
+#include "ADTPP/ADTTypedef.hpp"
+
 namespace adt
 {
-
-  typedef long long int ll;
-  typedef unsigned long long int ull;
-
   class Array
   {
     private:
@@ -27,7 +25,10 @@ namespace adt
       void insert_front(ll element);
       void insert_back(ll element);
 
-      void remove(ull index);
+      ll remove(ull index);
+      ll remove_front();
+      ll remove_back();
+
 
       ull length();
 

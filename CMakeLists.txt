@@ -10,8 +10,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include(Config.cmake)
 
-add_subdirectory(src/Array)
-
 enable_testing()
 
+add_subdirectory(src/Array)
 add_subdirectory(tests/Array)
+
+add_subdirectory(src/LinkedList)
+add_subdirectory(tests/LinkedList)
