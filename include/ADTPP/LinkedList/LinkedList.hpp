@@ -2,6 +2,7 @@
 #define ADTPP_LINKED_LIST_HPP
 
 #include <iostream>
+#include <optional>
 #include <initializer_list>
 
 #include "ADTPP/ADTTypedef.hpp"
@@ -35,6 +36,10 @@ namespace adt
     ll remove(ull index);
     ll remove_front();
     ll remove_back();
+
+    ull length();
+
+    std::optional<ull> linear_search(ll element);
 
     void print();
 

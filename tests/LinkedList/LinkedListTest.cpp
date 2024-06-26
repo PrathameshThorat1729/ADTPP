@@ -4,13 +4,6 @@
 #include "ADTPPTest.hpp"
 using namespace std;
 
-// void print_search(adt::LinkedList& arr, adt::ll element, bool linear = true, bool increasing = true)
-// {
-//   auto index = (linear) ? arr.linear_search(element) : arr.binary_search(element, increasing);
-//   if(index) cout << *index << " ";
-//   else cout << "-1 ";
-// }
-
 int main(int argc, char** args)
 {
   TEST("LLPrintTest")
@@ -46,6 +39,19 @@ int main(int argc, char** args)
     ll.remove_back();
 
     ll.print();
+  }
+  
+  TEST("LLLinearSearchTest")
+  {
+    adt::LinkedList ll({3, 5, 2, 90, 54, 23});
+
+    auto index = ll.linear_search(90);
+    if(index) cout << *index << " ";
+    else cout << "-1 ";
+
+    index = ll.linear_search(900);
+    if(index) cout << *index << " ";
+    else cout << "-1 ";
   }
   return 0;
 }

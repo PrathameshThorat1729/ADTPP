@@ -2,7 +2,7 @@
 
 A Complete DSA Package package created in C++ 
 
-_**Note** : It only supports Integers_
+_**Note** : It only supports **Long Long Integers**_
 
 _**Caution** : Created for practise and educational purpose, use in your project at your own risk_
 

@@ -29,7 +29,6 @@ namespace adt
       ll remove_front();
       ll remove_back();
 
-
       ull length();
 
       std::optional<ull> linear_search(ll element);

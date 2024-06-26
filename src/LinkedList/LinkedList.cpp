@@ -83,6 +83,20 @@ namespace adt
     }
   }
 
+  ull LinkedList::length() { return _length; }
+
+  std::optional<ull> LinkedList::linear_search(ll element)
+  {
+    Node *temp = _sentinel;
+    for(int i = 0; temp->next != nullptr; ++i)
+    {
+      temp = temp->next;
+
+      if(temp->data == element) return i;
+    }
+    return std::nullopt;
+  }
+
   LinkedList::~LinkedList()
   {
     while(_sentinel != nullptr)
