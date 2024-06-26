@@ -50,7 +50,7 @@ namespace adt
 ####################
 
 echo "set($name"FileList"
-  ${CMAKE_CURRENT_SOURCE_DIR}/$name.cpp)
+  \${CMAKE_CURRENT_SOURCE_DIR}/$name.cpp)
 
 add_adtpp_library($name \${$name"FileList"})" > src/$name/CMakeLists.txt
 
@@ -78,7 +78,7 @@ int main(int argc, char** args)
 ##### Create Test Makefiles #####
 ####################
 
-echp "add_adtpp_test_exe($name"Test" ${CMAKE_CURRENT_SOURCE_DIR}/$name"Test".cpp ADT::$name)
+echo "add_adtpp_test_exe($name"Test" \${CMAKE_CURRENT_SOURCE_DIR}/$name"Test".cpp ADT::$name)
 
 add_adtpp_test($name"SampleTest" $name"Test" \"Sample Test\")" > tests/$name/CMakeLists.txt
 
