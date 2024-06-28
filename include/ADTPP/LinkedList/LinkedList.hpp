@@ -19,7 +19,7 @@ namespace adt
 
   class LinkedList
   {
-  private:
+  protected:
     Node* _sentinel;
     ull _length;
 

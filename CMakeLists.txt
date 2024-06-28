@@ -17,3 +17,6 @@ add_subdirectory(tests/Array)
 
 add_subdirectory(src/LinkedList)
 add_subdirectory(tests/LinkedList)
+
+add_subdirectory(src/Stack)
+add_subdirectory(tests/Stack)
